@@ -1,0 +1,25 @@
+{
+  "name": "@sn/client",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "start": "next start",
+    "prebuild": "rimraf .next",
+    "build": "next build",
+    "lint:check": "eslint \"src/**/*.{js,ts,tsx}\"",
+    "lint:fix": "eslint \"src/**/*.{js,ts,tsx}\" --fix",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@sn/ui-kit": "^0.0.1",
+    "next": "^10.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@emotion/babel-preset-css-prop": "^10.2.1",
+    "@sn/config": "0.0.1",
+    "next-transpile-modules": "^4.1.0"
+  }
+}

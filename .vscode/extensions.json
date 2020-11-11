@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "coenraads.bracket-pair-colorizer-2",
+    "ms-azuretools.vscode-docker",
+    "mikestead.dotenv",
+    "dsznajder.es7-react-js-snippets",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "pkief.material-icon-theme",
+    "silvenon.mdx",
+    "esbenp.prettier-vscode",
+    "visualstudioexptteam.vscodeintellicode",
+    "redhat.vscode-yaml"
+  ]
+}

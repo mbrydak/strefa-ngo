@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "isolatedModules": false,
+    "lib": ["dom", "esnext"],
+    "types": ["cypress"]
+  },
+  "include": ["src"]
+}

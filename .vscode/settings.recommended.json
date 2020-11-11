@@ -1,0 +1,82 @@
+{
+  "breadcrumbs.enabled": true,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.detectIndentation": true,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [120],
+  "editor.smoothScrolling": true,
+  "editor.suggestSelection": "first",
+  "editor.suggest.localityBonus": true,
+  "editor.tabSize": 2,
+  "editor.unfoldOnClickAfterEndOfLine": true,
+  "editor.wordBasedSuggestions": false,
+  "emmet.triggerExpansionOnTab": true,
+  "explorer.confirmDragAndDrop": false,
+  "files.eol": "\n",
+  "files.trimTrailingWhitespace": true,
+  "files.exclude": {
+    "USE_GITIGNORE": true
+  },
+  "files.defaultLanguage": "{activeEditorLanguage}",
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "javascript.validate.enable": false,
+  "material-icon-theme.activeIconPack": "none",
+  "material-icon-theme.folders.color": "#fdd835",
+  "material-icon-theme.folders.theme": "specific",
+  "material-icon-theme.files.associations": {
+    "*.module.ts": "nest-module",
+    "*.service.ts": "nest-service",
+    "*.pipe.ts": "nest-pipe",
+    "*.resolver.ts": "nest-resolver",
+    "*.guard.ts": "nest-guard",
+    "*.decorator.ts": "nest-decorator",
+    "*.filter.ts": "nest-filter",
+    "*.gateway.ts": "nest-gateway",
+    "*.middleware.ts": "nest-middleware",
+    "*.controller.ts": "nest-controller"
+  },
+  "material-icon-theme.folders.associations": {
+    "components": "react-components",
+    "definitions": "typescript",
+    "store": "redux-store",
+    "types": "typescript",
+    "app": ""
+  },
+  "search.exclude": {
+    "yarn.lock": true
+  },
+  "typescript.surveys.enabled": false,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "typescript.workspaceSymbols.scope": "currentProject",
+  "window.zoomLevel": 0,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.iconTheme": "material-icon-theme",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.suggestSelection": "recentlyUsed",
+    "editor.suggest.showKeywords": false
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "fixturesFolder": "src/fixtures",
+  "integrationFolder": "src/integration",
+  "screenshotsFolder": "src/screenshots",
+  "videosFolder": "src/videos",
+  "supportFile": false,
+  "pluginsFile": false
+}
