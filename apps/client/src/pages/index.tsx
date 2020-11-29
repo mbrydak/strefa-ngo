@@ -1,10 +1,12 @@
-import { Button } from '@sn/ui-kit';
+import { Box, Button, ThemeProvider } from '@sn/ui-kit';
 
 const IndexPage = () => (
-  <div>
-    <h1>Hello Next.js</h1>
+  <ThemeProvider>
+    <Box as="h1" color="warning.main">
+      Hello Next.js
+    </Box>
     <Button color="primary">Hello UI Kit</Button>
-  </div>
+  </ThemeProvider>
 );
 
 export default IndexPage;

@@ -1,0 +1,10 @@
+{
+  "eslint.workingDirectories": [
+    "apps/client",
+    "apps/server",
+    "development/e2e",
+    "development/storybook",
+    "packages/ui-kit"
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

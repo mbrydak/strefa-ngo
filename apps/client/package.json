@@ -9,17 +9,18 @@
     "build": "next build",
     "lint:check": "eslint \"src/**/*.{js,ts,tsx}\"",
     "lint:fix": "eslint \"src/**/*.{js,ts,tsx}\" --fix",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "check-updates": "ncu"
   },
   "dependencies": {
-    "@sn/ui-kit": "^0.0.1",
-    "next": "^10.0.1",
+    "@sn/ui-kit": "0.0.1",
+    "next": "^10.0.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
   "devDependencies": {
-    "@emotion/babel-preset-css-prop": "^10.2.1",
+    "@emotion/babel-plugin": "^11.0.0",
     "@sn/config": "0.0.1",
-    "next-transpile-modules": "^4.1.0"
+    "next-transpile-modules": "^5.0.0"
   }
 }

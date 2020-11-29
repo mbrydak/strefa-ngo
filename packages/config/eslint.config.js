@@ -34,7 +34,7 @@ const baseConfig = {
     '@typescript-eslint/prefer-enum-initializers': 2, // enum values should be always specified explicitly
     'import/order': 0, // turned of as we're using simple-import-sort for sorting
     'import/prefer-default-export': 0, // we're using default exports only for pages
-    'simple-import-sort/sort': [
+    'simple-import-sort/imports': [
       2,
       {
         groups: [

@@ -1,11 +1,13 @@
 import React from 'react';
+import { Button, ButtonProps } from '@sn/ui-kit';
 import { Meta, Story } from '@storybook/react';
 
-import { Button, ButtonProps } from './Button';
+import { disabledControls } from '../helpers';
 
 export default {
   title: 'Button',
   component: Button,
+  argTypes: disabledControls,
 } as Meta;
 
 const Template: Story<ButtonProps> = (args) => <Button {...args} />;

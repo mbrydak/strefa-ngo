@@ -65,6 +65,7 @@ out
 # VS Code
 .vscode/*
 !.vscode/settings.recommended.json
+!.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json

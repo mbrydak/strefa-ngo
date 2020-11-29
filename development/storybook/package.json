@@ -1,0 +1,35 @@
+{
+  "name": "@sn/storybook",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "start-storybook -p 6006 -s public",
+    "start": "serve storybook-static",
+    "prebuild": "rimraf storybook-static",
+    "build": "build-storybook -s public",
+    "lint:check": "eslint \"src/**/*.{js,ts,tsx}\"",
+    "lint:fix": "eslint \"src/**/*.{js,ts,tsx}\" --fix",
+    "typecheck": "tsc --noEmit",
+    "check-updates": "ncu"
+  },
+  "dependencies": {
+    "emotion-theming": "^11.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@sn/config": "0.0.1",
+    "@sn/ui-kit": "0.0.1",
+    "@storybook/addon-actions": "^6.1.9",
+    "@storybook/addon-essentials": "^6.1.9",
+    "@storybook/addon-links": "^6.1.9",
+    "@storybook/node-logger": "^6.1.9",
+    "@storybook/preset-create-react-app": "^3.1.5",
+    "@storybook/react": "^6.1.9",
+    "babel-loader": "^8.2.2",
+    "react-is": "^17.0.1"
+  }
+}
