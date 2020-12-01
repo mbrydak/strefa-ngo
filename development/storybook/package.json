@@ -23,6 +23,7 @@
     "@babel/core": "^7.12.9",
     "@sn/config": "0.0.1",
     "@sn/ui-kit": "0.0.1",
+    "@storybook/addon-a11y": "^6.1.9",
     "@storybook/addon-actions": "^6.1.9",
     "@storybook/addon-essentials": "^6.1.9",
     "@storybook/addon-links": "^6.1.9",
