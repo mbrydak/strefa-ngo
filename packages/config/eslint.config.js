@@ -10,7 +10,16 @@ const baseConfig = {
     ecmaVersion: 2020,
     sourceType: 'module',
   },
-  plugins: ['@typescript-eslint', 'react', 'react-hooks', 'jest', 'jest-dom', 'prettier', 'simple-import-sort'],
+  plugins: [
+    '@typescript-eslint',
+    'react',
+    'react-hooks',
+    'jest',
+    'jest-dom',
+    'prettier',
+    'simple-import-sort',
+    'testing-library',
+  ],
   extends: [
     'eslint:recommended',
     'airbnb-typescript',
@@ -22,6 +31,7 @@ const baseConfig = {
     'plugin:jest/recommended',
     'plugin:jest-dom/recommended',
     'plugin:react-hooks/recommended',
+    'plugin:testing-library/react',
   ],
   rules: {
     complexity: 2, // prevent from writing too complex functions
