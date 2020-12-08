@@ -10,7 +10,8 @@
     "lint:check": "eslint \"src/**/*.{js,ts,tsx}\"",
     "lint:fix": "eslint \"src/**/*.{js,ts,tsx}\" --fix",
     "typecheck": "tsc --noEmit",
-    "check-updates": "ncu"
+    "check-updates": "ncu",
+    "icons:generate": "svgr -d src/icons/components src/icons/svg && eslint \"src/icons/components/**/*.tsx\" --fix"
   },
   "dependencies": {
     "@emotion/react": "^11.1.1",
@@ -22,6 +23,7 @@
   "devDependencies": {
     "@emotion/jest": "^11.1.0",
     "@sn/config": "0.0.1",
+    "@svgr/cli": "^5.5.0",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.2.2",
