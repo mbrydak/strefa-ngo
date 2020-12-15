@@ -14,6 +14,9 @@ module.exports = {
     '@storybook/preset-create-react-app',
     '@storybook/addon-a11y',
   ],
+  babel: async () => ({
+    plugins: ['emotion'],
+  }),
   webpackFinal: async (config) => {
     addModulesToTranspile(config, 'packages/ui-kit');
 
