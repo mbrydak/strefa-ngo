@@ -7,8 +7,13 @@
     "start": "next start",
     "prebuild": "rimraf .next",
     "build": "next build",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "test:changed": "jest --onlyChanged",
     "lint:check": "eslint \"src/**/*.{js,ts,tsx}\"",
     "lint:fix": "eslint \"src/**/*.{js,ts,tsx}\" --fix",
+    "lint:changed": "eslint $(git diff --name-only --relative=\"apps/client\" --diff-filter=ACMRTUXB master | grep  -E \"(.js$|.ts$|.tsx$)\")",
     "typecheck": "tsc --noEmit",
     "check-updates": "ncu"
   },
