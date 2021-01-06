@@ -7,10 +7,10 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
-    "test:changed": "jest --onlyChanged",
+    "test:changed": "jest --findRelatedTests $(git diff --name-only --relative=\"packages/ui-kit\" --diff-filter=ACMRTUXB $ORIGIN | grep  -E \"(.js$|.ts$|.tsx$)\") --passWithNoTests CI=true",
     "lint:check": "eslint \"src/**/*.{js,ts,tsx}\"",
     "lint:fix": "eslint \"src/**/*.{js,ts,tsx}\" --fix",
-    "lint:changed": "eslint $(git diff --name-only --relative=\"packages/ui-kit\" --diff-filter=ACMRTUXB master | grep  -E \"(.js$|.ts$|.tsx$)\")",
+    "lint:changed": "eslint $(git diff --name-only --relative=\"packages/ui-kit\" --diff-filter=ACMRTUXB $ORIGIN | grep  -E \"(.js$|.ts$|.tsx$)\")",
     "typecheck": "tsc --noEmit",
     "check-updates": "ncu",
     "icons:generate": "svgr -d src/icons/components src/icons/svg && eslint \"src/icons/components/**/*.tsx\" --fix"

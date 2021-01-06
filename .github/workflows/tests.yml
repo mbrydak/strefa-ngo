@@ -1,0 +1,16 @@
+name: Run tests
+on:
+  pull_request:
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 15
+      - run: yarn --frozen-lockfile
+      - run: yarn bootstrap
+      # Associate the base ref (branch) with the origin branch:
+      - run: git fetch origin ${{ github.event.pull_request.base.ref }}:${{ github.event.pull_request.base.ref }}
+      - run: TARGET_BRANCH=${{ github.event.pull_request.base.ref }} yarn test:changed

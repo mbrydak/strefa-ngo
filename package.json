@@ -13,10 +13,10 @@
     "dev:server": "cd apps/server && yarn run dev",
     "showtime": "lerna run dev --parallel",
     "test": "lerna run test --parallel",
-    "test:changed": "lerna run test:changed --parallel",
+    "test:changed": "ORIGIN=$TARGET_BRANCH lerna run test:changed --parallel",
     "lint:check": "lerna run lint:check --parallel",
     "lint:fix": "lerna run lint:fix --parallel",
-    "lint:changed": "lerna run lint:changed --parallel",
+    "lint:changed": "ORIGIN=$TARGET_BRANCH lerna run lint:changed --parallel",
     "typecheck": "lerna run typecheck --parallel",
     "check-updates": "lerna run check-updates --parallel",
     "update-packages": "lerna run check-updates --parallel -- --upgrade",
@@ -25,7 +25,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "yarn typecheck && yarn lint:changed && yarn test:changed"
+      "pre-push": "yarn typecheck && TARGET_BRANCH=master yarn lint:changed && TARGET_BRANCH=master yarn test:changed"
     }
   },
   "devDependencies": {
