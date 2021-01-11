@@ -25,7 +25,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "yarn typecheck && TARGET_BRANCH=master yarn lint:changed && TARGET_BRANCH=master yarn test:changed"
+      "pre-push": "yarn typecheck && yarn lint:changed && yarn test:changed"
     }
   },
   "devDependencies": {

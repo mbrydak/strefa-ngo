@@ -7,7 +7,7 @@
     "start": "cypress run",
     "lint:check": "eslint \"src/**/*.{js,ts,tsx}\"",
     "lint:fix": "eslint \"src/**/*.{js,ts,tsx}\" --fix",
-    "lint:changed": "eslint $(git diff --name-only --relative=\"development/e2e\" --diff-filter=ACMRTUXB $ORIGIN | grep  -E \"(.js$|.ts$|.tsx$)\")",
+    "lint:changed": "node  ../../scripts/lintChanged.js",
     "typecheck": "tsc --noEmit",
     "check-updates": "ncu"
   },
