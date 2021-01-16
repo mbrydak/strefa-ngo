@@ -1,0 +1,18 @@
+{
+  "assignees": ["KonradSzwarc"],
+  "groupName": "All dependencies",
+  "groupSlug": "all",
+  "ignorePaths": ["**/node_modules/**", ".github/**"],
+  "labels": ["dependencies"],
+  "packageRules": [
+    {
+      "groupName": "All dependencies",
+      "groupSlug": "all",
+      "paths": ["*"]
+    }
+  ],
+  "rangeStrategy": "pin",
+  "schedule": ["before 3am on Friday"],
+  "separateMajorMinor": false,
+  "updateLockFiles": true
+}
