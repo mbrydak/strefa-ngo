@@ -12,10 +12,10 @@
     "check-updates": "ncu"
   },
   "dependencies": {
-    "cypress": "^6.0.0"
+    "cypress": "6.0.0"
   },
   "devDependencies": {
     "@sn/config": "0.0.1",
-    "eslint-plugin-cypress": "^2.11.2"
+    "eslint-plugin-cypress": "2.11.2"
   }
 }
