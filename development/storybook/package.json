@@ -22,15 +22,15 @@
     "react-scripts": "4.0.1"
   },
   "devDependencies": {
-    "@babel/core": "7.12.9",
+    "@babel/core": "7.12.10",
     "@sn/config": "0.0.1",
-    "@storybook/addon-a11y": "6.1.9",
-    "@storybook/addon-actions": "6.1.9",
-    "@storybook/addon-essentials": "6.1.9",
-    "@storybook/addon-links": "6.1.9",
-    "@storybook/node-logger": "6.1.9",
+    "@storybook/addon-a11y": "6.1.14",
+    "@storybook/addon-actions": "6.1.14",
+    "@storybook/addon-essentials": "6.1.14",
+    "@storybook/addon-links": "6.1.14",
+    "@storybook/node-logger": "6.1.14",
     "@storybook/preset-create-react-app": "3.1.5",
-    "@storybook/react": "6.1.9",
+    "@storybook/react": "6.1.14",
     "babel-loader": "8.2.2",
     "react-is": "17.0.1"
   }
