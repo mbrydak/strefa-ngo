@@ -16,8 +16,14 @@ describe('AppController', () => {
   });
 
   describe('root', () => {
-    it('should return "Hello World!"', () => {
-      expect(appController.getHello()).toBe('Hello World!');
+    it('should return user data', async () => {
+      const user = await appController.getUser();
+
+      expect(user).toEqual({
+        id: 1,
+        fullName: 'John Doe',
+        isAccountConfirmed: true,
+      });
     });
   });
 });

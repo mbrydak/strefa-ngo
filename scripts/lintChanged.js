@@ -1,3 +1,3 @@
-const { getChangedFilesScriptPath, runScript } = require('./scriptsHelpers');
+const { injectChangedFilesScript, runScript } = require('./scriptsHelpers');
 
-runScript(`eslint $(node ${getChangedFilesScriptPath()} $ORIGIN) --no-error-on-unmatched-pattern`);
+runScript(`eslint ${injectChangedFilesScript()} --no-error-on-unmatched-pattern`);

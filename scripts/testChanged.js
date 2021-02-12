@@ -1,3 +1,3 @@
-const { getChangedFilesScriptPath, runScript } = require('./scriptsHelpers');
+const { injectChangedFilesScript, runScript } = require('./scriptsHelpers');
 
-runScript(`jest --findRelatedTests $(node ${getChangedFilesScriptPath()} $ORIGIN) --passWithNoTests CI=true`);
+runScript(`jest --findRelatedTests ${injectChangedFilesScript()} --passWithNoTests CI=true`);

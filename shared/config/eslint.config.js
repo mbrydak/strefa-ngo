@@ -34,10 +34,10 @@ const baseConfig = {
     'plugin:testing-library/react',
   ],
   rules: {
-    complexity: 2, // prevent from writing too complex functions
+    complexity: [2, 11], // prevent from writing too complex functions
     'sort-imports': 0, // turned of as we're using simple-import-sort for sorting
     'spaced-comment': [2, 'always', { markers: ['/'] }], // modified to allow TS references with triple brackets
-    'class-methods-use-this': 0,
+    'class-methods-use-this': 0, // sometimes we're using classes only to describe a shape of the object (e.g. DTOs, validators).
     '@typescript-eslint/explicit-module-boundary-types': 0, // in many cases TS knows return type of the function so don't require to always specify it explicitly
     '@typescript-eslint/no-unused-vars': [2, { argsIgnorePattern: '^_' }], // allow to declare unused vars with _ prefix
     '@typescript-eslint/array-type': 2, // each array type should be written as type[]

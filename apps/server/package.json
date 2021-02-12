@@ -4,15 +4,15 @@
   "private": true,
   "scripts": {
     "predev": "rimraf dist",
-    "dev": "nest start --watch",
+    "dev": "nest build --webpack --webpackPath webpack.dev.js",
     "start": "node dist/main",
     "prebuild": "rimraf dist",
-    "build": "nest build",
+    "build": "nest build --webpack --webpackPath webpack.prod.js",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:changed": "node  ../../scripts/testChanged.js",
-    "lint:check": "eslint \"src/**/*.{js,ts,tsx}\"",
+    "lint": "eslint \"src/**/*.{js,ts,tsx}\"",
     "lint:fix": "eslint \"src/**/*.{js,ts,tsx}\" --fix",
     "lint:changed": "node  ../../scripts/lintChanged.js",
     "typecheck": "tsc --noEmit",
@@ -22,20 +22,23 @@
     "@nestjs/common": "7.6.11",
     "@nestjs/core": "7.6.11",
     "@nestjs/platform-express": "7.6.11",
+    "@sn/models": "0.0.1",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.6.3"
   },
   "devDependencies": {
-    "@nestjs/cli": "7.5.4",
+    "@nestjs/cli": "7.5.1",
     "@nestjs/schematics": "7.2.7",
     "@nestjs/testing": "7.6.11",
     "@sn/config": "0.0.1",
     "@types/express": "4.17.11",
     "@types/supertest": "2.0.10",
     "jest": "26.6.3",
+    "start-server-webpack-plugin": "2.2.5",
     "ts-jest": "26.5.0",
     "ts-loader": "8.0.15",
     "ts-node": "9.1.1",
-    "tsconfig-paths": "3.9.0"
+    "tsconfig-paths": "3.9.0",
+    "webpack-node-externals": "2.5.2"
   }
 }

@@ -15,7 +15,7 @@ module.exports = {
     '@storybook/addon-a11y',
   ],
   webpackFinal: async (config) => {
-    addModulesToTranspile(config, 'packages/ui-kit');
+    addModulesToTranspile(config, 'shared/ui-kit');
 
     return config;
   },

@@ -5,10 +5,7 @@
   "scripts": {
     "dev": "docusaurus start --port 5000",
     "build": "docusaurus build",
-    "docusaurus": "docusaurus",
-    "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
-    "serve": "docusaurus serve",
+    "start": "docusaurus serve",
     "check-updates": "ncu"
   },
   "dependencies": {

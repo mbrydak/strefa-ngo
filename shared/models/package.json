@@ -1,0 +1,9 @@
+{
+  "name": "@sn/models",
+  "version": "0.0.1",
+  "private": true,
+  "main": "src/index.ts",
+  "devDependencies": {
+    "@sn/config": "0.0.1"
+  }
+}

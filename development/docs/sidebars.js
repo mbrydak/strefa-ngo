@@ -1,6 +1,7 @@
 module.exports = {
   someSidebar: {
-    Docusaurus: ['doc1', 'doc2', 'doc3'],
-    Features: ['mdx'],
+    General: ['introduction', 'best-practices', 'project-structure', 'scripts-convention'],
+    InProgress: ['github-configuration'],
+    Other: ['useful-libraries'],
   },
 };

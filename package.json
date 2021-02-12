@@ -6,20 +6,17 @@
   "workspaces": [
     "apps/*",
     "development/*",
-    "packages/*"
+    "shared/*"
   ],
   "scripts": {
-    "dev:client": "cd apps/client && yarn run dev",
-    "dev:server": "cd apps/server && yarn run dev",
     "showtime": "lerna run dev --parallel",
     "test": "lerna run test --parallel",
-    "test:changed": "ORIGIN=$TARGET_BRANCH lerna run test:changed --parallel",
-    "lint:check": "lerna run lint:check --parallel",
+    "test:changed": "lerna run test:changed --parallel",
+    "lint": "lerna run lint --parallel",
     "lint:fix": "lerna run lint:fix --parallel",
-    "lint:changed": "ORIGIN=$TARGET_BRANCH lerna run lint:changed --parallel",
+    "lint:changed": "lerna run lint:changed --parallel",
     "typecheck": "lerna run typecheck --parallel",
     "check-updates": "lerna run check-updates --parallel",
-    "update-packages": "lerna run check-updates --parallel -- --upgrade",
     "bootstrap": "lerna bootstrap",
     "cleanup": "yarn cache clean && lerna clean -y && rimraf node_modules"
   },
