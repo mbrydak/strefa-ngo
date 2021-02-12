@@ -25,14 +25,14 @@
     "react-dom": "17.0.1"
   },
   "devDependencies": {
-    "@emotion/babel-plugin": "11.1.2",
-    "@emotion/jest": "11.1.0",
+    "@emotion/babel-plugin": "11.2.0",
+    "@emotion/jest": "11.2.0",
     "@sn/config": "0.0.1",
     "@testing-library/jest-dom": "5.11.9",
-    "@testing-library/react": "11.2.3",
-    "@testing-library/user-event": "12.6.2",
+    "@testing-library/react": "11.2.5",
+    "@testing-library/user-event": "12.7.0",
     "jest": "26.6.3",
-    "next-transpile-modules": "6.2.0",
-    "ts-jest": "26.5.0"
+    "next-transpile-modules": "6.3.0",
+    "ts-jest": "26.5.1"
   }
 }

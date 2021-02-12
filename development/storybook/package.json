@@ -22,7 +22,7 @@
     "react-scripts": "4.0.2"
   },
   "devDependencies": {
-    "@babel/core": "7.12.13",
+    "@babel/core": "7.12.16",
     "@sn/config": "0.0.1",
     "@storybook/addon-a11y": "6.1.17",
     "@storybook/addon-actions": "6.1.17",
