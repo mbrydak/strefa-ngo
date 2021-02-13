@@ -1,4 +1,4 @@
-const { createEslintConfig } = require('@sn/config');
+const { createEslintConfig } = require('@sn/config/eslint');
 
 module.exports = createEslintConfig({
   dirname: __dirname,

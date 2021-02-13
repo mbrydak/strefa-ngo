@@ -1,7 +1,5 @@
 {
   "name": "@sn/config",
   "version": "0.0.1",
-  "private": true,
-  "main": "index.js",
-  "types": "index.d.ts"
+  "private": true
 }
