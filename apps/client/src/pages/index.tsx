@@ -1,11 +1,9 @@
-import type { User } from '@sn/models';
 import { Box, Button, ThemeProvider } from '@sn/ui-kit';
 
-import { SERVER_URL } from '../constants';
+import { getUser } from '@/api/getUser';
+import type { ServerSideProps } from '@/types';
 
-type IndexPageProps = {
-  user: User;
-};
+type IndexPageProps = ServerSideProps<typeof getServerSideProps>;
 
 const IndexPage = ({ user }: IndexPageProps) => (
   <ThemeProvider>
@@ -16,13 +14,12 @@ const IndexPage = ({ user }: IndexPageProps) => (
   </ThemeProvider>
 );
 
-export async function getServerSideProps() {
-  const res = await fetch(SERVER_URL);
-  const data: User = await res.json();
+export const getServerSideProps = async () => {
+  const { data: user } = await getUser();
 
   return {
-    props: { user: data },
+    props: { user },
   };
-}
+};
 
 export default IndexPage;

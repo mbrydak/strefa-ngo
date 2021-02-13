@@ -1,3 +1,3 @@
-import { createJestConfig } from '@sn/config/jest';
+import { createJestConfig } from '@sn/config';
 
 export default createJestConfig({ type: 'server' });

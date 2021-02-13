@@ -1,4 +1,17 @@
-const path = require('path');
+import path from 'path';
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type Rule = Record<string, number | any[]>;
+
+type Args = {
+  env?: { node?: boolean; browser?: boolean; 'cypress/globals'?: boolean };
+  dirname: string;
+  tsConfigFile: string;
+  jsx?: boolean;
+  rules?: Rule;
+  plugins?: string[];
+  extends?: string[];
+};
 
 const baseConfig = {
   root: true,
@@ -92,8 +105,20 @@ const baseConfig = {
   },
 };
 
-const createEslintConfig = (args) => {
-  const config = { ...baseConfig };
+type BaseConfig = typeof baseConfig;
+
+type Config = BaseConfig & {
+  parserOptions: BaseConfig['parserOptions'] & { project?: string; ecmaFeatures?: { jsx?: boolean } };
+  settings: BaseConfig['settings'] & {
+    'import/resolver': {
+      node: { paths?: string[] };
+      typescript?: { project: string };
+    };
+  };
+};
+
+export const createEslintConfig = (args: Args) => {
+  const config: Config = { ...baseConfig };
   const configPath = path.resolve(args.dirname, args.tsConfigFile);
 
   config.parserOptions.project = configPath;
@@ -124,5 +149,3 @@ const createEslintConfig = (args) => {
 
   return config;
 };
-
-module.exports = { createEslintConfig };

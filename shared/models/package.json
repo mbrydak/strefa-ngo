@@ -4,6 +4,7 @@
   "private": true,
   "main": "src/index.ts",
   "devDependencies": {
-    "@sn/config": "0.0.1"
+    "@sn/config": "0.0.1",
+    "@sn/server": "0.0.1"
   }
 }

@@ -1,7 +1,6 @@
-const { createEslintConfig } = require('@sn/config');
+const { createEslintConfig } = require('./src/eslint');
 
 module.exports = createEslintConfig({
   dirname: __dirname,
-  env: { node: true },
   tsConfigFile: 'tsconfig.eslint.json',
 });

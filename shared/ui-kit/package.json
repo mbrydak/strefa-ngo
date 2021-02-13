@@ -13,7 +13,8 @@
     "lint:changed": "node  ../../scripts/lintChanged.js",
     "typecheck": "tsc --noEmit",
     "check-updates": "ncu",
-    "icons:generate": "svgr -d src/icons/components src/icons/svg && eslint \"src/icons/components/**/*.tsx\" --fix"
+    "generate:icons": "svgr -d src/generated/icons src/icons && eslint \"src/generated/icons/**/*.tsx\" --fix",
+    "generate": "yarn generate:icons"
   },
   "dependencies": {
     "@emotion/react": "11.1.5",
@@ -30,9 +31,6 @@
     "@testing-library/react": "11.2.5",
     "@testing-library/user-event": "12.7.0",
     "@types/jest": "26.0.20",
-    "@types/styled-system": "5.1.10",
-    "jest": "26.6.3",
-    "ts-jest": "26.5.1",
-    "typescript": "4.1.5"
+    "@types/styled-system": "5.1.10"
   }
 }

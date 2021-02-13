@@ -10,7 +10,6 @@ coverage
 .nyc_output
 
 # Production
-build
 dist
 storybook-static
 
@@ -18,6 +17,7 @@ storybook-static
 .docusaurus
 .cache-loader
 development/e2e/**/videos
+generated
 
 # OS
 .DS_Store

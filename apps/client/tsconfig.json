@@ -7,8 +7,12 @@
     "lib": ["dom", "esnext"],
     "module": "esnext",
     "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "target": "esnext"
+    "target": "esnext",
+    "paths": {
+      "@/api/*": ["api/*"],
+      "@/constants": ["constants"],
+      "@/types": ["types"]
+    }
   },
   "exclude": ["node_modules"],
   "include": ["src", "next-env.d.ts"]

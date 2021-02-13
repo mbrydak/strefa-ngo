@@ -34,6 +34,8 @@ To make project maintenance simpler, we are striving for the unification of our 
 
 **start** - runs an app that has been built.
 
+**generate** - generate files required for packages to work correctly. It's always called when you bootstrap the project.
+
 ## Other
 
 **check-updates** - check update possibilities for all installed packages.
@@ -48,4 +50,4 @@ The project's root contains some scripts mentioned above. The purpose of those i
 
 **bootstrap** - use it when you're starting the project for the first time and each time after the `cleanup` script. It will install dependencies for all packages and link monorepo packages with each other.
 
-**cleanup** - removes all node_module folders across the project and cleans Lerna and Yarn cache. Your first aid when your app doesn't start for some reason.
+**cleanup** - removes all generated folders and cleans Lerna and Yarn cache. Your first aid when your app doesn't start for some reason.
