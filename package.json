@@ -12,6 +12,7 @@
     "showtime": "lerna run dev --parallel",
     "test": "lerna run test --parallel",
     "test:changed": "lerna run test:changed --parallel",
+    "test:cov": "lerna run test:cov --parallel",
     "lint": "lerna run lint --parallel",
     "lint:fix": "lerna run lint:fix --parallel",
     "lint:changed": "lerna run lint:changed --parallel",

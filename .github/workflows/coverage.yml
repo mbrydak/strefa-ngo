@@ -1,0 +1,48 @@
+name: Run all tests and send coverage report
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 15
+
+      - name: Install dependencies
+        run: yarn --frozen-lockfile
+
+      - name: Bootstrap Lerna monorepo
+        run: yarn bootstrap
+
+      - name: Run tests and generate coverage report
+        run: yarn test:cov
+
+      - name: Upload client coverage
+        uses: codecov/codecov-action@v1
+        with:
+          flags: client
+          directory: apps/client
+          token: ${{ secrets.CODECOV_TOKEN }}
+
+      - name: Upload server coverage
+        uses: codecov/codecov-action@v1
+        with:
+          flags: server
+          directory: apps/server
+          token: ${{ secrets.CODECOV_TOKEN }}
+
+      - name: Upload UI kit coverage
+        uses: codecov/codecov-action@v1
+        with:
+          flags: ui-kit
+          directory: shared/ui-kit
+          token: ${{ secrets.CODECOV_TOKEN }}

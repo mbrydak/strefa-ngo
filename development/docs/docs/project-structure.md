@@ -78,7 +78,7 @@ strefa-ngo
 
 **apps, development, shared** - workspaces with the project's packages.
 
-**scripts** - scripts used across many packages. Currently, you can find there two main scripts: `lintChanged.js` and `testChanged.js`. As their names suggest, they will run ESLint/Jest only for changed files in the particular package. By default, those scripts will use the `master` branch as the base for running `git diff`. You can customize it by specifying the `TARGET_BRANCH` environment variable.
+**scripts** - scripts used across many packages. Currently, you can find there two main scripts: `lintChanged.js` and `testChanged.js`. As their names suggest, they will run ESLint/Jest only for changed files in the particular package. By default, those scripts will use the `main` branch as the base for running `git diff`. You can customize it by specifying the `TARGET_BRANCH` environment variable.
 
 **.gitignore** - list of all files across the entire monorepo that Git should ignore.
 

@@ -1,6 +1,6 @@
 const { runScript } = require('./scriptsHelpers');
 
-const targetBranch = process.env.TARGET_BRANCH || 'master';
+const targetBranch = process.env.TARGET_BRANCH || 'main';
 const splitPath = process.cwd().split('/');
 const packagePath = splitPath.slice(-2).join('/');
 

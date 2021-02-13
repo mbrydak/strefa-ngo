@@ -1,6 +1,10 @@
-name: Run typecheck
+name: Check TypeScript types across the codebase
+
 on:
   pull_request:
+    branches:
+      - main
+
 jobs:
   typecheck:
     runs-on: ubuntu-latest

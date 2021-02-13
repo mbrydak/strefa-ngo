@@ -1,7 +1,7 @@
 import type { User } from '@sn/models';
 import { Box, Button, ThemeProvider } from '@sn/ui-kit';
 
-import { SERVER_URL } from './constants';
+import { SERVER_URL } from '../constants';
 
 type IndexPageProps = {
   user: User;
