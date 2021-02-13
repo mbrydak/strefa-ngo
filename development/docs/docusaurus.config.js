@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Strefa NGO',
-  tagline: 'Dokumentacja projektowa',
+  tagline: 'Project documentation',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -9,9 +9,9 @@ module.exports = {
   projectName: 'strefa-ngo',
   themeConfig: {
     navbar: {
-      title: 'Strefa NGO - dokumentacja',
+      title: 'Strefa NGO - docs',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Strefa NGO logo',
         src: 'img/logo.svg',
       },
       items: [

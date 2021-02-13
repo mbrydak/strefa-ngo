@@ -2,6 +2,7 @@
   "assignees": ["KonradSzwarc"],
   "groupName": "All dependencies",
   "groupSlug": "all",
+  "ignoreDeps": ["@nestjs/cli"],
   "ignorePaths": ["**/node_modules/**", ".github/**"],
   "labels": ["dependencies"],
   "packageRules": [

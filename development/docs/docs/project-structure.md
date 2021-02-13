@@ -90,8 +90,6 @@ strefa-ngo
 
 **README.md** - basic description of the project. It shouldn't cover too many details about the project development as those are covered by this documentation.
 
-**renovate.json** - configuration for the [Renovate GitHub app](https://www.whitesourcesoftware.com/free-developer-tools/renovate). We're using it to update our dependencies every Friday at 3 AM automatically.
-
 **tsconfig.base.json** - base for each package TypeScript configuration. It shouldn't ever be used as a standalone config file - always as a value for the `extends` key in `tsconfig.json` of a particular package.
 
 **yarn.lock** - file with locked versions of project's dependencies.
