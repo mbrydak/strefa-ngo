@@ -20,7 +20,7 @@ title: Project structure
 
 Workspaces are folders that contain project's packages. They are written in `lerna.json` to work correctly with the Lerna CLI and `package.json` to work with Yarn Workspaces functionality. Currently, we're using the following workspaces:
 
-**Apps** - applications targeted to the end-users. Apps packages can use other packages but cannot be imported by them.
+**Apps** - applications targeted to the end-users.
 
 **Development** - tools used by developers. Development packages can use other packages but cannot be imported by them.
 
@@ -46,9 +46,11 @@ Packages are folders that contain code for a particular slice of the project. Ea
 
 ### Shared workspace
 
+**@sn/api** - API requests and functions for mocking the server (using MSW).
+
 **@sn/config** - shared ESLint configuration.
 
-**@sn/models** - types representing data exchanged between the server and the client.
+**@sn/models** - data structures used for the client and the server.
 
 **@sn/ui-kit** - library of reusable components with pre-defined theming.
 

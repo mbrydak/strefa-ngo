@@ -1,4 +1,5 @@
 import { Controller, Get } from '@nestjs/common';
+
 import { User } from '@sn/models';
 
 import { AppService } from './app.service';

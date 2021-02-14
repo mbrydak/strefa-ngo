@@ -1,4 +1,4 @@
-import type { AppController } from '@sn/server/src/app.controller';
+import { build, fake, sequence } from '@jackfranklin/test-data-bot';
 
 export type User = {
   id: number;
@@ -6,4 +6,10 @@ export type User = {
   isAccountConfirmed: boolean;
 };
 
-export type GetUser = AppController['getUser'];
+export const userBuilder = build<User>('User', {
+  fields: {
+    id: sequence(),
+    fullName: fake((f) => f.name.findName()),
+    isAccountConfirmed: fake((f) => f.random.boolean()),
+  },
+});

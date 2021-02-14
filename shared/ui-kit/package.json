@@ -24,13 +24,8 @@
     "styled-system": "5.1.5"
   },
   "devDependencies": {
-    "@emotion/jest": "11.2.0",
     "@sn/config": "0.0.1",
     "@svgr/cli": "5.5.0",
-    "@testing-library/jest-dom": "5.11.9",
-    "@testing-library/react": "11.2.5",
-    "@testing-library/user-event": "12.7.0",
-    "@types/jest": "26.0.20",
     "@types/styled-system": "5.1.10"
   }
 }

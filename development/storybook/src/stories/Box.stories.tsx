@@ -1,6 +1,7 @@
 import React from 'react';
-import { Box, BoxProps } from '@sn/ui-kit';
 import { Meta, Story } from '@storybook/react';
+
+import { Box, BoxProps } from '@sn/ui-kit';
 
 import { disabledControls } from '../helpers';
 

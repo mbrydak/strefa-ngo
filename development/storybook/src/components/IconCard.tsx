@@ -1,4 +1,5 @@
 import React, { ComponentType } from 'react';
+
 import { Box, Flex } from '@sn/ui-kit';
 
 export type IconCardProps = {

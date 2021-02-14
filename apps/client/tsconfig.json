@@ -9,8 +9,8 @@
     "moduleResolution": "node",
     "target": "esnext",
     "paths": {
-      "@/api/*": ["api/*"],
       "@/constants": ["constants"],
+      "@/testing/*": ["testing/*"],
       "@/types": ["types"]
     }
   },

@@ -1,7 +1,6 @@
 import React, { createRef } from 'react';
-import { screen } from '@testing-library/react';
 
-import { render } from '../testing';
+import { render, screen } from '../testing';
 import { Box } from './Box';
 
 describe('Box', () => {

@@ -1,6 +1,7 @@
 import React from 'react';
-import { Button, ButtonProps } from '@sn/ui-kit';
 import { Meta, Story } from '@storybook/react';
+
+import { Button, ButtonProps } from '@sn/ui-kit';
 
 import { disabledControls } from '../helpers';
 

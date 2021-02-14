@@ -1,15 +1,9 @@
-import type { AxiosPromise } from 'axios';
+import type { PromiseValue } from 'type-fest';
 
-export type PromiseType<AnyPromise extends Promise<unknown>> = AnyPromise extends Promise<infer U> ? U : never;
-
-export type ServerSideProps<GetServerSideProps extends () => Promise<unknown>> = PromiseType<
+export type ServerSideProps<GetServerSideProps extends () => Promise<unknown>> = PromiseValue<
   ReturnType<GetServerSideProps>
 > extends {
   props: infer PropsValue;
 }
   ? PropsValue
   : never;
-
-export type ApiCall<RequestFunction extends () => Promise<unknown>> = (
-  ...args: Parameters<RequestFunction>
-) => AxiosPromise<PromiseType<ReturnType<RequestFunction>>>;

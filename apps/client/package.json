@@ -18,20 +18,17 @@
     "check-updates": "ncu"
   },
   "dependencies": {
+    "@sn/api": "0.0.1",
     "@sn/models": "0.0.1",
     "@sn/ui-kit": "0.0.1",
-    "axios": "0.21.1",
     "next": "10.0.6",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "type-fest": "0.21.0"
   },
   "devDependencies": {
     "@emotion/babel-plugin": "11.2.0",
-    "@emotion/jest": "11.2.0",
     "@sn/config": "0.0.1",
-    "@testing-library/jest-dom": "5.11.9",
-    "@testing-library/react": "11.2.5",
-    "@testing-library/user-event": "12.7.0",
     "next-transpile-modules": "6.3.0"
   }
 }

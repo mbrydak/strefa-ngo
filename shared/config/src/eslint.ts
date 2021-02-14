@@ -62,7 +62,8 @@ const baseConfig = {
       {
         groups: [
           ['^\\u0000'], // side effect imports.
-          ['^(react|@nestjs)', '^@?\\w'], // packages from node_modules. `react`/nest related packages come first.
+          ['^(react|@nestjs)', '^(?!@sn.*$)@?\\w'], // packages from node_modules. `react`/nest related packages come first.
+          ['^@sn.'], // packages from the monorepo.
           ['^[^.]'], // absolute imports (mostly written as `@/foo`). Anything that does not start with a dot.
           ['^\\.'], // relative imports. Anything that starts with a dot.
         ],
@@ -80,7 +81,7 @@ const baseConfig = {
       },
     },
     {
-      files: ['*.test.(ts|tsx)', '*.stories.tsx', 'setupTests.ts'],
+      files: ['*.test.(ts|tsx)', '*.stories.tsx', 'setupTests.ts', '*.handler.ts', '**/testing/**/*'],
       rules: {
         'import/no-extraneous-dependencies': 0,
       },

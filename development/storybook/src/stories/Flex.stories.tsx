@@ -1,6 +1,7 @@
 import React from 'react';
-import { Flex, FlexProps } from '@sn/ui-kit';
 import { Meta, Story } from '@storybook/react';
+
+import { Flex, FlexProps } from '@sn/ui-kit';
 
 import { createSelectControl, disabledControls } from '../helpers';
 
