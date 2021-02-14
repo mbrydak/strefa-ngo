@@ -1,9 +1,6 @@
-import type { PromiseValue } from 'type-fest';
+import type { AsyncFunction, AsyncReturnType, GetProperty } from '@sn/types';
 
-export type ServerSideProps<GetServerSideProps extends () => Promise<unknown>> = PromiseValue<
-  ReturnType<GetServerSideProps>
-> extends {
-  props: infer PropsValue;
-}
-  ? PropsValue
-  : never;
+export type ServerSideProps<GetServerSideProps extends AsyncFunction> = GetProperty<
+  AsyncReturnType<GetServerSideProps>,
+  'props'
+>;
