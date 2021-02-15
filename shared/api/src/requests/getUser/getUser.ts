@@ -1,10 +1,10 @@
 import type { AppController } from '@sn/server/src/app.controller';
+import { AsyncReturnType } from '@sn/types';
 
-import type { AxiosApiCall } from '../../types';
-import { api } from '../../utils';
+import { createRequest } from '../../utils';
 
-export type GetUser = AppController['getUser'];
+export type GetUserResponseData = AsyncReturnType<AppController['getUser']>;
 
-export const getUser: AxiosApiCall<GetUser> = () => {
-  return api.get('/');
+export const getUser = () => {
+  return createRequest('get')<GetUserResponseData>('/');
 };
