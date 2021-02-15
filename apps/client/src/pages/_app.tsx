@@ -1,9 +1,10 @@
 import type { AppProps } from 'next/app';
 
 import { startMockServer } from '@sn/api';
+import { IS_MSW_ENABLED } from '@sn/env';
 import { ThemeProvider } from '@sn/ui-kit';
 
-if (process.env.NEXT_PUBLIC_API_MOCKING === 'enabled') {
+if (IS_MSW_ENABLED) {
   startMockServer();
 }
 

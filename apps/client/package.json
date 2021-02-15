@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@sn/api": "0.0.1",
+    "@sn/env": "0.0.1",
     "@sn/models": "0.0.1",
     "@sn/ui-kit": "0.0.1",
     "@sn/types": "0.0.1",

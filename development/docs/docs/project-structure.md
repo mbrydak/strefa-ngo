@@ -48,7 +48,9 @@ Packages are folders that contain code for a particular slice of the project. Ea
 
 **@sn/api** - API requests and functions for mocking the server (using MSW).
 
-**@sn/config** - shared ESLint configuration.
+**@sn/config** - shared ESLint and Jest configuration.
+
+**@sn/env** - all logic related to environment variables.
 
 **@sn/models** - data structures used for the client and the server.
 
