@@ -11,7 +11,8 @@
     "paths": {
       "@/constants": ["constants"],
       "@/testing/*": ["testing/*"],
-      "@/types": ["types"]
+      "@/types": ["types"],
+      "@/views/*": ["views/*"]
     }
   },
   "exclude": ["node_modules"],

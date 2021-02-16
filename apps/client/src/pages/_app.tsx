@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app';
 
 import { startMockServer } from '@sn/api';
-import { IS_MSW_ENABLED } from '@sn/env';
+import { IS_MSW_ENABLED } from '@sn/env/universal';
 import { ThemeProvider } from '@sn/ui-kit';
 
 if (IS_MSW_ENABLED) {

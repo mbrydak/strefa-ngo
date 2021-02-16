@@ -1,4 +1,4 @@
-import type { AppController } from '@sn/server/src/app.controller';
+import type { AppController } from '@sn/server/src/app/app.controller';
 import { AsyncReturnType } from '@sn/types';
 
 import { createRequest } from '../../utils';

@@ -5,7 +5,7 @@
   "scripts": {
     "predev": "rimraf dist",
     "dev": "nest build --webpack --webpackPath webpack.dev.js",
-    "start": "node dist/main",
+    "start": "cross-env NODE_ENV=production node dist/main",
     "prebuild": "rimraf dist",
     "build": "nest build --webpack --webpackPath webpack.prod.js",
     "test": "jest",
@@ -22,7 +22,9 @@
     "@nestjs/common": "7.6.12",
     "@nestjs/core": "7.6.12",
     "@nestjs/platform-express": "7.6.12",
+    "@sn/env": "0.0.1",
     "@sn/models": "0.0.1",
+    "helmet": "4.4.1",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.6.3"
   },

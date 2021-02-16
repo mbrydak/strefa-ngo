@@ -1,17 +1,14 @@
-import { NestFactory } from '@nestjs/core';
+import { AppModule } from './app/app.module';
+import { applyGlobalMiddleware, createServer, enableHMR, runServer } from './common/bootstrap';
 
-import { AppModule } from './app.module';
+const bootstrap = async () => {
+  const server = await createServer(AppModule);
 
-const PORT = 4000;
+  applyGlobalMiddleware(server);
 
-async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
-  await app.listen(PORT);
+  await runServer(server);
 
-  if (module.hot) {
-    module.hot.accept();
-    module.hot.dispose(() => app.close());
-  }
-}
+  enableHMR(server);
+};
 
 bootstrap();

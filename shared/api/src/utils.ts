@@ -1,7 +1,7 @@
 import axios, { AxiosInstance } from 'axios';
 import { rest } from 'msw';
 
-import { SERVER_URL } from '@sn/env';
+import { SERVER_URL } from '@sn/env/universal';
 
 type RestObject = typeof rest;
 
