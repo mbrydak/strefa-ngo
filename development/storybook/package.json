@@ -11,8 +11,7 @@
     "lint": "eslint \"src/**/*.{js,ts,tsx}\"",
     "lint:fix": "eslint \"src/**/*.{js,ts,tsx}\" --fix",
     "lint:changed": "node  ../../scripts/lintChanged.js",
-    "typecheck": "tsc --noEmit",
-    "check-updates": "ncu"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@sn/ui-kit": "0.0.1",
@@ -22,15 +21,15 @@
     "react-scripts": "4.0.2"
   },
   "devDependencies": {
-    "@babel/core": "7.12.16",
+    "@babel/core": "7.12.17",
     "@sn/config": "0.0.1",
-    "@storybook/addon-a11y": "6.1.17",
-    "@storybook/addon-actions": "6.1.17",
-    "@storybook/addon-essentials": "6.1.17",
-    "@storybook/addon-links": "6.1.17",
-    "@storybook/node-logger": "6.1.17",
-    "@storybook/preset-create-react-app": "3.1.5",
-    "@storybook/react": "6.1.17",
+    "@storybook/addon-a11y": "6.1.18",
+    "@storybook/addon-actions": "6.1.18",
+    "@storybook/addon-essentials": "6.1.18",
+    "@storybook/addon-links": "6.1.18",
+    "@storybook/node-logger": "6.1.18",
+    "@storybook/preset-create-react-app": "3.1.6",
+    "@storybook/react": "6.1.18",
     "babel-loader": "8.2.2",
     "react-is": "17.0.1"
   }

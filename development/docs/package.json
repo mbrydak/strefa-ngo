@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "docusaurus start --port 5000",
     "build": "docusaurus build",
-    "start": "docusaurus serve",
-    "check-updates": "ncu"
+    "start": "docusaurus serve"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-alpha.fd17476c3",

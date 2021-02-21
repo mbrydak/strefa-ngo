@@ -4,7 +4,7 @@
   "private": true,
   "main": "src/index.ts",
   "dependencies": {
-    "type-fest": "0.21.0"
+    "type-fest": "0.21.1"
   },
   "devDependencies": {
     "@sn/config": "0.0.1"
