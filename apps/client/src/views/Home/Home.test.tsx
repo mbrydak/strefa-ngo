@@ -12,13 +12,13 @@ describe('Index page', () => {
   it("displays welcome message containing user's full name", () => {
     render(<Home user={user} />);
 
-    expect(screen.getByText(`Hello ${user.fullName}`)).toBeInTheDocument();
+    expect(screen.getByText(`common:hello ${user.fullName}`)).toBeInTheDocument();
   });
 
-  it('displays welcome button', () => {
+  it('displays button', () => {
     render(<Home user={user} />);
 
-    expect(screen.getByRole('button', { name: 'Hello UI Kit' })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'home:clickMe' })).toBeInTheDocument();
   });
 
   it('receives correct user object from `getServerSideProps`', async () => {

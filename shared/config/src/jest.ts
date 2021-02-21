@@ -38,6 +38,7 @@ const baseConfig: JestConfig = {
 
 const clientConfig: JestConfig = {
   snapshotSerializers: ['@emotion/jest/serializer'],
+  setupFiles: ['dotenv/config'],
   setupFilesAfterEnv: ['./setupTests.ts'],
 };
 
